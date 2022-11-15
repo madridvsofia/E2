@@ -3,16 +3,16 @@
 :root { 
   
   --background: #46455c75;
-  --primary: #1337b9;
-  --secondary: #272d37;
+  --primary: #F52F57;
+  --secondary: #F3752B;
   --btn-bg: #050d26;
-  --bg-azul-10: #e9eeff;
+  --bg-red-10: #780000;
   --bg-white: #fff;
   --bg-electric: #f0fbff;
   --nav-bg: #0f1525;
 
   
-  --text-violet: #a534b4;
+  --text-deep: #A20021;
   --text-white: #f3f4f6;
 
   
@@ -63,7 +63,7 @@ header {
 }
  
 .navbar-list a {
-    color: var(--redheart);
+    color: var(--primary);
     font-size: 15px;
    
 }
@@ -78,4 +78,122 @@ header {
     cursor: pointer;
     border: 3px solid var(--redheart);
     background-color: var(--redheart);
+}
+
+main {
+    background: var(--bg-red-10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-electric);
+    width: 100%;
+    background-image: url(./img/Witching\ Hour.jpg)
+}
+
+#hero {
+    margin-top: 65px;
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 60px;
+    width: 90%;
+    min-width: 300px;
+    color: var(--secondary);
+}
+
+.hero-info p {
+    font-size: smaller 10px;
+    width: 70%;
+    color: var(--text-white);
+}
+
+.hero-info a {
+    color: var(--bg-red-10);
+    background-color: var(--primary);
+    width: 110px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.hero-box1 {
+    width: 300px;
+    background-color: var(--text-deep);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-gif-info h3 {
+    font-size: 16px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.hero-gif {
+    border-radius: 20px;
+}
+
+#info {
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#info h2 {
+    font-size: 35px;
+    background-color: var(--secondary);
+    border-radius: 60px;
+    width: 200px;
+    text-align: center;
+}
+
+.info-container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-container1 img {
+    background-color: var(--bg-red-10);
+    border-radius: 30px;
+}
+
+.info-container1 p {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background-color: var(--text-deep);
+    border-radius: 20px;
+    margin-top: 20px;
 }
